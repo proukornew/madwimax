@@ -1,0 +1,3 @@
+#summary Здесь можно добавлять ссылки на свои логи.
+
+http://lvk.cs.msu.su/~lasaine/madwimax/logs/
