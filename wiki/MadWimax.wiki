@@ -19,3 +19,5 @@
 [ProtocolSummary Общая информация]
 
 [RequestTypes Типы запросов]
+
+[UsbLogs Доступные логи]
