@@ -1,0 +1,5 @@
+#summary Дополнительная информация, полученная в ходе реверс-инжениринга.
+
+|| Чип || [http://www.samsung.com/global/business/telecommunication/productInfo.do?ctgry_group=11&ctgry_type=16&b2b_prd_id=384 Samsung cmc730] ||
+|| Ревизия || 2.1 (?) ||
+|| ОС || [http://en.wikipedia.org/wiki/Nucleus_RTOS Nucleus RTOS] (?) ||
