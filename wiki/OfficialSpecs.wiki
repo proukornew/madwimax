@@ -1,4 +1,4 @@
-#summary Официальная информация о Samsung SWC-U200 ([http://www.yota.ru/ru/devices/])
+#summary Официальная информация о Samsung SWC-U200 ( [http://www.yota.ru/ru/devices/ источник] )
 
 = Технические характеристики: =
 || Интерфейс подключения || USB2.0 ||
