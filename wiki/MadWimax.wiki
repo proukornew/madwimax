@@ -30,7 +30,7 @@ The driver uses [http://libusb.wiki.sourceforge.net/Libusb1.0 libusb-1.0 library
 
 Linux TUN/TAP driver is used for user-space Ethernet interface.
 
-[block.png]
+http://madwimax.googlecode.com/svn/wiki/block.png
 
 = Users =
 

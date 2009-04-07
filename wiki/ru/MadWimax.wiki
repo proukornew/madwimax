@@ -30,6 +30,8 @@
 
 Для создания Ethernet интерфейса в user-space используется драйвер TUN/TAP.
 
+http://madwimax.googlecode.com/svn/wiki/block.png
+
 = Для пользователей =
 
 [Installation Установка]
