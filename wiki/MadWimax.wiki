@@ -1,32 +1,31 @@
-= О проекте =
+= About the project =
 
-[MadWimax] - реверс-инжинированный Linux драйвер для Samsung SWC-U200, USB адаптера для доступа к сетям Mobile Wimax. Проект так называется благодаря очень успешному проекту с похожими целями [http://madwifi-project.org/wiki MadWifi]. Надеемся, что и мы добьемся своего. :)
+[MadWimax] is a reverse-engineered linux driver for Mobile Wimax (802.16e) devices based on Samsung CMC-730 chip. These devices are currently supported:
+  * [SWC-U200 Samsung SWC-U200]
+  * [SWC-E100 Samsung SWC-E100]
+  * [SWM-S10R Samsung SWM-S10R] (built in [NC-10 Samsung NC-10] netbook)
+Project is named after [http://madwifi-project.org/wiki MadWifi].
 
-Для удобства разработки драйвер пишется полностью в user-space. Это должно существенно сократить время необходимое для создание полноценного драйвера. Если производительность окажется неудовлетворительной, позже можно будет его переписать в виде модуля ядра.
+The driver is completely user-space. There are a few reasons for that:
+  * portability
+    It should run gracefully on every kernel from 2.4. It can be ported to other platforms with some effort.
+  * ease of development
+    Debugging is easy in user-space.
+  * security
+    You cannot crash kernel due to a bug in the user-space code (well, it's supposed to be this way :) ).
 
-Для обмена данными с устройством используется библиотека [http://libusb.wiki.sourceforge.net/Libusb1.0 libusb-1.0]. Она сильно упрощает процесс написания USB драйвера в user-space. Кроме того, она поддерживает асинхронные передачи, которые необходимы для обмена данными с SWC-U200. К сожалению, библиотека поддерживает только Linux.
+There is also a [http://git.altlinux.org/people/silicium/packages/kernel-source-u200.git project] to port [MadWimax] to Linux kernel.
 
-Для создания сетевого интерфейса в user-space используется TAP драйвер.
+The driver uses [http://libusb.wiki.sourceforge.net/Libusb1.0 libusb-1.0 library] to communicate to the device. This library helps a lot to write a user-space USB driver and also supports the required asynchronous transfers. Unfortunately it works under Linux only at the moment. Mac OS X port is ongoing.
+Linux TUN/TAP driver is used for user-space Ethernet interface.
 
-Самой серьезной задачей в данный момент является расшифровка протокола обмена данными с устройством. Для этого предлагается использовать 3 подхода:
- * анализ логов взаимодействия официального Windows драйвера с SWC-U200, получаемых с помощью [http://www.pcausa.com/Utilities/UsbSnoop/default.htm USB сниффера]. Лучше всего логи потом выкладывать в общий доступ, чтобы каждый участник проекта мог потом воспользоваться этой информацией.
- * дизассемблирование Windows драйвера. Hint: нужный файл - C7xUSBX3.sys.
- * анализ прошивок
+= Users =
 
-= Информация об устройстве =
+[Installation Installation]
 
-[OfficialSpecs Официальная информация]
+= Developers =
 
-[LsusbOutput Вывод lsusb]
+[UsbProtocol USB protocol info]
 
-[UnofficialSpecs Из других источников]
+[ReverseEngineering Reverse-engineering]
 
-= USB протокол =
-
-В этом разделе будет собираться информация о протоколе обмена данными с Samsung SWC-U200.
-
-[ProtocolSummary Общая информация]
-
-[RequestTypes Типы запросов]
-
-[UsbLogs Доступные логи]

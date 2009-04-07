@@ -1,4 +1,20 @@
-#summary Вывод lsusb -v -d 04e9:6761
+﻿= Информация о SWC-U200 =
+
+== Официальные технические характеристики ==
+|| Интерфейс подключения || USB2.0 ||
+|| Модуляция || QPSK, 16/64QAM, OFDMA ||
+|| Стандарт || IEEE 802.16e Wave 2 ||
+|| Диапазон частот || 2.5~2.7GHz ||
+|| Мощность сигнала на выходе || 0,2 W ||
+|| Потребляемая мощность || 2,5 W ||
+|| Размеры || 70x27x14 mm ||
+|| Вес || 25 g ||
+
+([http://www.yota.ru/ru/devices/modems/ источник])
+
+== Вывод lsusb  ==
+
+Вывод lsusb -v -d 04e9:6761:
 
 {{{
 Bus 002 Device 005: ID 04e9:6761 PC-Tel, Inc.
@@ -99,3 +115,9 @@ Device Qualifier (for other device speed):
 Device Status:     0x0000
   (Bus Powered)
 }}}
+
+== Из других источников ==
+
+|| Чипсет || [http://www.samsung.com/global/business/telecommunication/productInfo.do?ctgry_group=11&ctgry_type=16&b2b_prd_id=384 Samsung cmc730] ||
+|| Ревизия || 2.1 (?) ||
+|| ОС || [http://en.wikipedia.org/wiki/Nucleus_RTOS Nucleus RTOS] (?) ||
