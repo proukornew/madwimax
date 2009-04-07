@@ -1,22 +1,33 @@
-= About the project =
+﻿= About the project =
 
 [MadWimax] is a reverse-engineered linux driver for Mobile Wimax (802.16e) devices based on Samsung CMC-730 chip. These devices are currently supported:
-  * [SWC-U200 Samsung SWC-U200]
-  * [SWC-E100 Samsung SWC-E100]
-  * [SWM-S10R Samsung SWM-S10R] (built in [NC-10 Samsung NC-10] netbook)
+
+  * [SwcU200 Samsung SWC-U200]
+
+  * [SwcE100 Samsung SWC-E100]
+
+  * [SwmS10R Samsung SWM-S10R] (built in [Nc10 Samsung NC-10] netbook)
+
 Project is named after [http://madwifi-project.org/wiki MadWifi].
 
 The driver is completely user-space. There are a few reasons for that:
+
   * portability
+
     It should run gracefully on every kernel from 2.4. It can be ported to other platforms with some effort.
+
   * ease of development
+
     Debugging is easy in user-space.
+
   * security
+
     You cannot crash kernel due to a bug in the user-space code (well, it's supposed to be this way :) ).
 
 There is also a [http://git.altlinux.org/people/silicium/packages/kernel-source-u200.git project] to port [MadWimax] to Linux kernel.
 
 The driver uses [http://libusb.wiki.sourceforge.net/Libusb1.0 libusb-1.0 library] to communicate to the device. This library helps a lot to write a user-space USB driver and also supports the required asynchronous transfers. Unfortunately it works under Linux only at the moment. Mac OS X port is ongoing.
+
 Linux TUN/TAP driver is used for user-space Ethernet interface.
 
 = Users =
