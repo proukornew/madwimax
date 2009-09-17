@@ -1,5 +1,5 @@
-Исходный код madwimax доступен через git репозиторий на github:
-
-git://github.com/ago/madwimax.git
+Исходный код madwimax доступен через git репозиторий на github: git://github.com/ago/madwimax.git
 
 Веб интерфейс: [http://github.com/ago/madwimax]
+
+Старый Subversion репозиторий доступен для просмотра: [http://code.google.com/p/madwimax/source/browse]
