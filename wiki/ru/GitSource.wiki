@@ -1,0 +1,5 @@
+Исходный код madwimax доступен через git репозиторий на github:
+
+[git://github.com/ago/madwimax.git]
+
+Веб интерфейс: [http://github.com/ago/madwimax]
